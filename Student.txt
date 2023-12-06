@@ -1,0 +1,20 @@
+CREATE TABLE `hocsinh`.`student` (
+  `id` INT NOT NULL,
+  `name` TEXT(45) NOT NULL,
+  `dob` DATE NOT NULL,
+  `department` TEXT(45) NOT NULL,
+  `selected` INT NOT NULL,
+  PRIMARY KEY (`id`));
+
+use hocsinh;
+INSERT INTO student (id, name, dob, department, selected) VALUES
+    ('001', 'John Doe', '1990-05-15', 'Computer Science', 1),
+    ('002', 'Jane Smith', '1992-09-20', 'Mathematics', 0),
+    ('003', 'Alice Johnson', '1991-07-10', 'Physics', 1),
+    ('004', 'Bob Williams', '1993-03-25', 'Chemistry', 0),
+    ('006', 'Minh An', '1994-06-18', 'Computer Science', 1),
+    ('007', 'Minh Hang', '2001-09-18', 'Mathematics', 0),
+    ('008', 'Kim Chi', '2006-08-25', 'Japanese', 1),
+    ('009', 'Mach An', '2001-10-20', 'Information Technology', 0);
+
+select * from hocsinh.student
